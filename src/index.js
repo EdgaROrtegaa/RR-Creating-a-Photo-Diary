@@ -16,6 +16,8 @@ async function main() {
 }
 
 main();
+
+main();
 let activeKoala = null
 
 // Changes the active koala, then re-renders the page to display that koala
