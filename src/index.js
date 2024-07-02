@@ -1,4 +1,21 @@
 import {koalas} from './koalas.js'
+import createUser from './createUser.js';
+
+async function main() {
+  const userData = {
+    email: "user@example.com",
+    password: "password123"
+  };
+
+  try {
+    const result = await createUser(userData);
+    console.log("User creation result:", result);
+  } catch (error) {
+    console.error("Error creating user:", error.message);
+  }
+}
+
+main();
 let activeKoala = null
 
 // Changes the active koala, then re-renders the page to display that koala

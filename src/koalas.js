@@ -1,3 +1,8 @@
+import { koalas } from './koalas.js'
+let activeKoala = null
+
+
+
 export const koalas = [
     {
         name: 'Basil',
